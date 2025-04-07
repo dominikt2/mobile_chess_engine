@@ -4,7 +4,7 @@
 
 ## 🔧 Features:
 - Five depth levels for the engine to chose from
-- Castling (with correct square checks)
+- Castling
 - En passant
 - Promotion
 - Move generation and validation from scratch
