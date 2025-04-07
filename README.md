@@ -4,13 +4,11 @@
 
 ## 🔧 Features:
 - Five depth levels for the engine to chose from
-- 
-Supports:
-  - Castling (with correct square checks)
-  -En passant
-  - Promotion
-  - Move generation and validation from scratch
-  - Cross-platform (mobile and desktop)
+- Castling (with correct square checks)
+- En passant
+- Promotion
+- Move generation and validation from scratch
+- Cross-platform (mobile and desktop)
 
 ## 🤖 AI Logic
 - Chess engine us using MiniMax algorithm
