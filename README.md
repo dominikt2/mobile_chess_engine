@@ -14,3 +14,9 @@
 - Chess engine us uses MiniMax algorithm with Alpha-Beta prunning for better performance
 - Evaluation boards contain best squares for each piece
     - For better gameplay king has both early and end-game evaluation board
+
+
+plans to do:
+- real-time game between two players
+- AI mode that doesn't rely on a fixed search depth, instead analyzes moves for a set amount of time
+  and plays the best move it finds within that time.
