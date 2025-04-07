@@ -1,8 +1,8 @@
-#♟️ Flutter Chess Game & Engine
+# ♟️ Flutter Chess Game & Engine
 
 <hr>
 
-##🔧 Features:
+## 🔧 Features:
 - Five depth levels for the engine to chose from
 - 
 Supports:
@@ -12,7 +12,7 @@ Supports:
   - Move generation and validation from scratch
   - Cross-platform (mobile and desktop)
 
-##🤖 AI Logic
+## 🤖 AI Logic
 - Chess engine us using MiniMax algorithm
 - Alpha-Beta prunning for better performance
 - Evaluation boards contain best squares for each piece
