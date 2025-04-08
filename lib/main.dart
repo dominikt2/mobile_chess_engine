@@ -120,7 +120,6 @@ void _dropPiece(int index) {
     placedX = x;
     placedY = y;
 
-    // Only make a move if the piece is dropped on a different square
     if (pieceIndex != moveIndex) {
       if(makeMove(pieceIndex, moveIndex, piece) != false){
         drop = false;
@@ -132,10 +131,9 @@ void _dropPiece(int index) {
           print('Checkmate!');
         }
       } else {
-        // If move is invalid, reset the piece to its original position
         board[pieceIndex] = piece;
         highlightedSquares.clear();
-        // Reset pickup coordinates to prevent blue highlighting of invalid move
+
         pickedUpX = -1;
         pickedUpY = -1;
         placedX = -1;
@@ -145,7 +143,7 @@ void _dropPiece(int index) {
       board[index] = piece;
       drop = false;
       highlightedSquares.clear();
-      // Reset pickup coordinates
+
       pickedUpX = -1;
       pickedUpY = -1;
       placedX = -1;
@@ -188,7 +186,6 @@ Color squareColor(int index) {
   int col = index % 8;
   bool isLightSquare = (row + col) % 2 == 0;
 
-  // Previous highlighted squares logic
   if (highlightedSquares.contains(index)) {
     return isLightSquare ? Colors.greenAccent[200]! : Colors.greenAccent[700]!;
   }
@@ -214,7 +211,6 @@ Color squareColor(int index) {
         : const Color.fromARGB(255, 137, 170, 227);
   }
 
-  // Default square colors
   return isLightSquare ? const Color(0xFFEEEED2) : const Color(0xFF769656);
 }
 
@@ -247,7 +243,7 @@ Widget build(BuildContext context) {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // Depth Selection Section
+
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
@@ -280,7 +276,6 @@ Widget build(BuildContext context) {
                   ],
                 ),
               ),
-              // Existing Reset Game Button
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
@@ -306,7 +301,6 @@ Widget build(BuildContext context) {
                   ],
                 ),
               ),
-              // Chessboard section (remains the same as before)
               LayoutBuilder(
                 builder: (context, constraints) {
                   final boardSize = Size(
