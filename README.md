@@ -19,3 +19,4 @@ plans todo:
 - real-time game between two players
 - AI mode that doesn't rely on a fixed search depth, instead analyzes moves for a set amount of time
   and plays the best move it finds within that time
+- settings to customize position and chessboard appearance
