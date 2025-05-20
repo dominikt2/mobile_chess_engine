@@ -1,5 +1,5 @@
 import 'package:chess_web/main.dart';
-import 'package:chess_web/trebfish.dart';
+import 'package:chess_web/silnik.dart';
 import 'main.dart';
 
 var board = List<String>.from([
