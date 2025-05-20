@@ -234,7 +234,7 @@ Widget build(BuildContext context) {
   return MaterialApp(
     home: Scaffold(
       appBar:  AppBar(
-        title: Text('SACHY'),
+        title: Text('SZACHY'),
       ),
       backgroundColor: const Color.fromARGB(255, 202, 193, 193),
       body: Center(
@@ -249,7 +249,7 @@ Widget build(BuildContext context) {
                 child: Column(
                   children: <Widget>[
                     Text(
-                      'AI Search Depth: $aiSearchDepth',
+                      'SEARCHING DEPTH: $aiSearchDepth',
                       style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                     ),
                     Row(
