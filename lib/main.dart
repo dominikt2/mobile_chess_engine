@@ -1,4 +1,4 @@
-import 'package:chess_web/trebfish.dart';
+import 'package:chess_web/silnik.dart';
 import 'package:flutter/material.dart';
 import 'game.dart';
 import 'dart:math';
